@@ -47,7 +47,7 @@ export class HeroesService {
           casa: "Marvel"
         },
         {
-          nombre: "Wolverinetl33",
+          nombre: "Wolverinetl",
           bio: "En el universo ficticio de Marvel, Wolverine posee poderes regenerativos que pueden curar cualquier herida, por mortal que ésta sea, además ese mismo poder hace que sea inmune a cualquier enfermedad existente en la Tierra y algunas extraterrestres . Posee también una fuerza sobrehumana, que si bien no se compara con la de otros superhéroes como Hulk, sí sobrepasa la de cualquier humano.",
           img: "assets/img/wolverine.png",
           aparicion: "1974-11-01",
@@ -73,9 +73,9 @@ export class HeroesService {
       textoABuscar = textoABuscar.toLowerCase();
 
       for(let heroe of this.heroes){
-        let nombre = heroe.nombre.toLocaleLowerCase();
+        let nombre = heroe.nombre.toLowerCase();
 
-        if( nombre.indexOf ( textoABuscar)>= 0) {
+        if( nombre.indexOf ( textoABuscar) >= 0) {
           heroesArr.push(heroe);
         }
       }
